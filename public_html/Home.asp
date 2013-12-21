@@ -7,7 +7,7 @@
     execute(item & " = """ & request.form(item) & """")
   next
 
-  if login = "rodrigo@mail.com" and senha = "123" then
+  if login = "rodrigo@mail.com" and senha = "123456" then
     strMsgTipo = "success"
     strMsgSucesso = "Usuário logado com sucesso!"
   else
@@ -25,7 +25,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="imgs/favicon.png">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>TestASP - Resultado de Login</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">

@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="imgs/favicon.png">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Login para TestASP</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
