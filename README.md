@@ -6,8 +6,8 @@ Some demos for something, with NUnit, Selenium WebDriver, Visual Studio 2012 and
 
 Instalando pacotes utilizados com NuGet:
 - install-package NUnit
-- install-package Selenium.WebDriver
-
+- install-package Selenium.WebDriver 2.39.0 (browser automation)
+- install-package Selenium.Support 2.39.0
 
 Passos para testar:
 * No Windows Seven
