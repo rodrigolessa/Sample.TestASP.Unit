@@ -54,5 +54,36 @@ namespace Sample.TestASP.Unit
             // Verifica o título da página
             Assert.AreEqual("TestASP - Resultado de Login", driver.Title);
         }
+
+        [Test]
+        public void TestaTelaDeLoginFalhando()
+        {
+            // WebDriverWait aguardar;
+            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
+
+            // Acessa o site em ASP, criado no localhost
+            driver.Navigate().GoToUrl("http://localhost/testeasp/");
+
+            // Localiza o campo texto em HTML pelo nome
+            IWebElement campoLogin = driver.FindElement(By.Name("login"));
+            // Insere um texto/valor para o campo
+            campoLogin.SendKeys("rodrigo@mail.com");
+
+            // Localiza o campo texto, senha, em HTML pelo nome
+            IWebElement campoSenha = driver.FindElement(By.Name("senha"));
+            // Insere um texto/valor para o campo
+            campoSenha.SendKeys("000000");
+
+            // Aguardar;
+            Thread.Sleep(4000);
+
+            campoSenha.Submit();
+
+            // Aguardar;
+            Thread.Sleep(3000);
+
+            // Verifica o título da página
+            Assert.AreEqual("TestASP - Resultado de Login", driver.Title);
+        }
     }
 }
